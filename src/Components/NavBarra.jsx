@@ -7,17 +7,17 @@ const NavBarra = () => {
   const usuarioNome = localStorage.getItem("userName")
     return (
     <div>
-      <Navbar expand="lg" bg="success" data-bs-theme="dark">
+      <Navbar expand="lg" bg="info" data-bs-theme="dark">
         <Container>
           {/* Icone mercado */}
           <span
             className="material-symbols-outlined"
             style={{ fontSize: "40px", color: "white" }}
           >
-            store
+            cake
           </span>
           {/* Texto logo */}
-          <Navbar.Brand href="/home">C&G Mercados</Navbar.Brand>
+          <Navbar.Brand href="/home">Lojinha de bolos</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="minha-nav" />
           <Navbar.Collapse id="minha-nav">

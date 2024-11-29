@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const CardProduto = (props) => {
-  // Funcao pra deletar um produto
+  // Funcao para deletar um produto
   const handleDelete = async (e) => {
     const req = await fetch(`http://localhost:5000/produtos/${props.id}`, 
     {
@@ -34,7 +34,7 @@ const CardProduto = (props) => {
           </Card.Text>
 
           <Card.Link href={`/produto/editar/${props.id}`}>
-            <Button variant="warning">Editar</Button>
+            <Button variant="success">Editar</Button>
           </Card.Link>
 
           <Card.Link href="/home">

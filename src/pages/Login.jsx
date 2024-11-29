@@ -108,8 +108,11 @@ const Login = () => {
           <FloatingLabel
             controlId="floatingInput"
             label="Email"
-            className="mb-3"
+            className="mb-3" 
+            
           >
+            
+
             <Form.Control
               type="email"
               placeholder="name@example.com"
@@ -118,6 +121,10 @@ const Login = () => {
                 setEmail(e.target.value);
               }}
             />
+              
+              
+           
+           
           </FloatingLabel>
 
           {/* Caixinha de senha */}
@@ -129,7 +136,10 @@ const Login = () => {
               onChange={(e) => {
                 setSenha(e.target.value);
               }}
+
             />
+
+
           </FloatingLabel>
 
           {/* Alerta caso haja erro */}
@@ -137,7 +147,7 @@ const Login = () => {
             {alertMensagem}
           </Alert>
 
-          {/* Botao pra enviar o formulário */}
+          {/* Botao para enviar o formulário */}
           <Button variant="light" type="submit" className="mt-4" size="lg">
             Login
           </Button>
